@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7LT-QH-xtG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Initial View Controller-->
+        <scene sceneID="Srm-k3-z2Z">
+            <objects>
+                <viewController id="7LT-QH-xtG" customClass="InitialViewController" customModule="NoahsAr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OOM-sc-zb5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_7" translatesAutoresizingMaskIntoConstraints="NO" id="g2A-51-jlI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="701"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChD-hX-VrM">
+                                <rect key="frame" x="166" y="233" width="42" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="7LT-QH-xtG" eventType="touchUpInside" id="VJz-oX-lSJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nah-bp-hDh">
+                                <rect key="frame" x="129" y="278" width="120" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Game Central">
+                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="e4Z-ew-Rz9" kind="show" identifier="InitialToFirstViewController" id="JdO-0b-jpJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHF-nZ-VLp">
+                                <rect key="frame" x="146.5" y="46" width="82" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="NoahsAR">
+                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="7LT-QH-xtG" eventType="touchUpInside" id="Fpg-og-iuv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MHF-nZ-VLp" firstAttribute="top" secondItem="ogZ-gI-aP2" secondAttribute="top" constant="26" id="CE2-XS-05f"/>
+                            <constraint firstItem="g2A-51-jlI" firstAttribute="top" secondItem="OOM-sc-zb5" secondAttribute="top" id="OvL-hn-vJN"/>
+                            <constraint firstItem="g2A-51-jlI" firstAttribute="leading" secondItem="ogZ-gI-aP2" secondAttribute="leading" id="V5P-iP-pr6"/>
+                            <constraint firstItem="MHF-nZ-VLp" firstAttribute="centerX" secondItem="OOM-sc-zb5" secondAttribute="centerX" id="XFV-7X-dJX"/>
+                            <constraint firstItem="g2A-51-jlI" firstAttribute="trailing" secondItem="ogZ-gI-aP2" secondAttribute="trailing" id="r2s-r5-yCF"/>
+                            <constraint firstItem="g2A-51-jlI" firstAttribute="bottom" secondItem="ogZ-gI-aP2" secondAttribute="bottom" constant="34" id="ssF-X6-kW5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ogZ-gI-aP2"/>
+                    </view>
+                    <connections>
+                        <segue destination="BV1-FR-VrT" kind="show" identifier="InitialToFirstViewController" id="7uw-Qh-nlW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ySh-yo-v6Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-626.39999999999998" y="123.68815592203899"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" id="BV1-FR-VrT" customClass="FirstViewController" customModule="NoahsAr" customModuleProvider="target" sceneMemberID="viewController">
+                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BrB-h1-WRS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </arscnView>
+                    <connections>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="399" y="110"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="fpG-tR-foe">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="e4Z-ew-Rz9" customClass="SecondViewController" customModule="NoahsAr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xTy-n7-B1P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Izb-Yf-vHl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="701"/>
+                            </arscnView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="xB7-Y1-x4f">
+                                <rect key="frame" x="70.5" y="612" width="234" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gc8-WV-Zhg" customClass="CustomButton" customModule="NoahsAr" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="4kV-cO-SpI"/>
+                                            <constraint firstAttribute="width" constant="70" id="6mD-JD-g16"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="&lt;-&gt;">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startHorizontalAction:" destination="e4Z-ew-Rz9" eventType="touchUpInside" id="0Ng-qR-M3Z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ce-lg-TZ7" customClass="CustomButton" customModule="NoahsAr" customModuleProvider="target">
+                                        <rect key="frame" x="82" y="0.0" width="70" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="Cp6-vm-YbB"/>
+                                            <constraint firstAttribute="height" constant="30" id="gMi-9z-72e"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Stop">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="stopAllActions:" destination="e4Z-ew-Rz9" eventType="touchUpInside" id="R5L-gg-TXn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIh-PW-LRC" customClass="CustomButton" customModule="NoahsAr" customModuleProvider="target">
+                                        <rect key="frame" x="164" y="0.0" width="70" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="VWS-Ve-4yy"/>
+                                            <constraint firstAttribute="height" constant="30" id="kMF-N4-MX2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="&lt;~&gt;">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startRoundAction:" destination="e4Z-ew-Rz9" eventType="touchUpInside" id="97q-kM-8O1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXb-3S-MSs" customClass="CustomButton" customModule="NoahsAr" customModuleProvider="target">
+                                <rect key="frame" x="142.5" y="318.5" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Hpq-gb-vMF"/>
+                                    <constraint firstAttribute="height" constant="30" id="ket-gi-BAa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Add Hoop">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addHoop:" destination="e4Z-ew-Rz9" eventType="touchUpInside" id="Tl8-Ox-hp0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Izb-Yf-vHl" firstAttribute="leading" secondItem="lIi-38-xBS" secondAttribute="leading" id="7Od-bj-HaE"/>
+                            <constraint firstItem="Izb-Yf-vHl" firstAttribute="top" secondItem="xTy-n7-B1P" secondAttribute="top" id="9V4-2O-rYU"/>
+                            <constraint firstItem="OXb-3S-MSs" firstAttribute="centerY" secondItem="xTy-n7-B1P" secondAttribute="centerY" id="9cs-xV-zek"/>
+                            <constraint firstItem="Izb-Yf-vHl" firstAttribute="trailing" secondItem="lIi-38-xBS" secondAttribute="trailing" id="ArC-bl-SE7"/>
+                            <constraint firstItem="OXb-3S-MSs" firstAttribute="centerX" secondItem="xTy-n7-B1P" secondAttribute="centerX" id="LzO-Fz-Sic"/>
+                            <constraint firstItem="Izb-Yf-vHl" firstAttribute="bottom" secondItem="lIi-38-xBS" secondAttribute="bottom" constant="34" id="Xtb-YM-RqJ"/>
+                            <constraint firstItem="lIi-38-xBS" firstAttribute="bottom" secondItem="xB7-Y1-x4f" secondAttribute="bottom" constant="25" id="erf-u7-5vC"/>
+                            <constraint firstItem="xB7-Y1-x4f" firstAttribute="centerX" secondItem="xTy-n7-B1P" secondAttribute="centerX" id="kZB-iA-3zJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lIi-38-xBS"/>
+                    </view>
+                    <connections>
+                        <outlet property="addHoopButton" destination="OXb-3S-MSs" id="JWs-46-p0l"/>
+                        <outlet property="sceneView" destination="Izb-Yf-vHl" id="wgE-KJ-HXY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KDi-H9-5jy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="408.80000000000001" y="823.53823088455783"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_7" width="426" height="640"/>
+    </resources>
+</document>
